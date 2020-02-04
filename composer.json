@@ -1,5 +1,5 @@
 {
-    "name": "yokai/enum-bundle",
+    "name": "shanewright/enum-bundle",
     "description": "Bring simple enumeration implementation to Symfony",
     "type": "symfony-bundle",
     "license": "MIT",
