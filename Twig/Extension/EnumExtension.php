@@ -2,6 +2,7 @@
 
 namespace Yokai\EnumBundle\Twig\Extension;
 
+use Twig\Extension\AbstractExtension;
 use Twig_Extension;
 use Twig_SimpleFilter;
 use Twig_SimpleFunction;
@@ -10,7 +11,7 @@ use Yokai\EnumBundle\Registry\EnumRegistryInterface;
 /**
  * @author Yann Eugoné <eugone.yann@gmail.com>
  */
-class EnumExtension extends Twig_Extension
+class EnumExtension extends AbstractExtension
 {
     /**
      * @var EnumRegistryInterface
