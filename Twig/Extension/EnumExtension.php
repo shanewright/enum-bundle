@@ -4,8 +4,8 @@ namespace Yokai\EnumBundle\Twig\Extension;
 
 use Twig\Extension\AbstractExtension;
 use Twig_Extension;
-use Twig_SimpleFilter;
-use Twig_SimpleFunction;
+use Twig\TwigFilter;
+use Twig\TwigFunction;
 use Yokai\EnumBundle\Registry\EnumRegistryInterface;
 
 /**
@@ -32,8 +32,8 @@ class EnumExtension extends AbstractExtension
     public function getFunctions()
     {
         return [
-            new Twig_SimpleFunction('enum_label', [$this, 'getLabel']),
-            new Twig_SimpleFunction('enum_choices', [$this, 'getChoices']),
+            new TwigFunction('enum_label', [$this, 'getLabel']),
+            new TwigFunction('enum_choices', [$this, 'getChoices']),
         ];
     }
 
@@ -43,7 +43,7 @@ class EnumExtension extends AbstractExtension
     public function getFilters()
     {
         return [
-            new Twig_SimpleFilter('enum_label', [$this, 'getLabel']),
+            new TwigFilter('enum_label', [$this, 'getLabel']),
         ];
     }
 
