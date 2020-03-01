@@ -14,7 +14,7 @@
         "symfony/framework-bundle": "~2.7|~3.0|~4.0|^5.0",
         "symfony/form": "~2.7|~3.0|~4.0|^5.0",
         "symfony/validator": "~2.7|~3.0|~4.0|^5.0",
-        "twig/twig": "~1.20|~2.0"
+        "twig/twig": "~1.20|~2.0|~3"
     },
     "require-dev": {
         "doctrine/annotations": "~1.3",
